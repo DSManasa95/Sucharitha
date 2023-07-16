@@ -1,0 +1,299 @@
+.my-name{
+    display: inline-flex;
+    position: relative;
+    top: 9px;
+    color: blueviolet;
+    padding-left: 70px;
+    padding-top: 7px;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700px;
+    transition-property: transform, color;
+    transition-duration: 1s;
+}
+.my-name a{
+    text-decoration: none;
+}
+.my-name:hover{
+    color: #fff;
+    transform: skew(-20deg);
+    font-size: 30px;
+    font-weight: 900;
+}
+.bars-icon{
+    display: inline-flex;
+    display: none;
+    position: relative;
+    top: 8px;
+    left: 200px;
+    padding-top:7px ;
+    font-weight: 700px;
+    font-size: 20px;
+}
+@media (max-width:760px) {
+    .bars-icon{
+        display: block;
+        font-size: 35px;
+        position: absolute;
+        left: 250px;
+        top: 15px;
+    }
+    .menu-items{
+        display: none;
+    }
+}
+
+.menu{
+    display: inline-flex;
+    list-style-type: none;
+    position: absolute;
+    left: 450px;
+    top: 9px;
+}
+.Nav-bar{
+    background-color: rgb(225, 17, 184);
+    border: 2px solid rgb(194, 56, 222);
+    height: 60px;
+    width: 100%;
+}
+.menu-items{
+    margin: 0px 40px;
+    position: relative;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700px;
+    color: blue;
+    transition-property: transform, font-size, font-weight,font-family;
+    transition-duration: 6s;
+}
+.menu-items a{
+    text-decoration: none;
+}
+.menu-items :hover{
+    transform: skew(-20deg);
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+} 
+.content{
+    margin-left: 40px;
+}
+.span-name{
+    color: rgba(8, 103, 14, 0.897)
+}
+.maincontent{
+    font-size: 50px;
+}
+.add-content{
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.typing-text::after{
+    content: '';
+    animation: typing 5s infinite;
+    animation-timing-function: linear;
+    color: rgb(66, 232, 94);
+}
+@keyframes typing{
+    0%{
+       content: "";
+    }
+    5%{
+        content: "W";
+    }
+    10%{
+        content: "We";
+    }
+    15%{
+        content: "Web";
+    }
+    20%{
+        content: "Web D";
+    }
+    35%{
+        content: "Web De";
+    }
+    30%{
+        content: "Web Dev";
+    }
+    35%{
+        content:"Web Deve";
+    }
+    40%{
+        content:"Web Devel";
+    }
+    50%{
+        content:"Web Develo";
+    }
+    60%{
+        content: "Web Develop";
+    }
+    70%{
+        content: "Web Developm";
+    }
+    80%{
+        content: "Web Developme";
+    }
+    90%{
+        content: "Web Developmen";
+    }
+    100%{
+        content: "Web Development";
+    }
+   
+}
+/* .about-me{
+    border: 2px double purple;
+    border-radius: 20px;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(201, 7, 219);
+    font-size: 30px;
+} */
+.dropdown_button{
+    background-color: blueviolet;
+    position: relative;
+    bottom: 60px;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    border: 2px solid blueviolet;
+    border-radius: 20%;
+    cursor: pointer;
+}
+.dropdown_button:hover{
+    background-color: burlywood;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    position: relative;
+    bottom: 60px;
+    background-color: #fff;
+    box-shadow: 0px 10px 15px black;
+    border: 2px solid snow;
+    border-radius: 10%;
+    font-size: larger;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 1;
+    width: 550px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;   
+}
+.dropdown-content a{
+    color: red;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: black;
+    color: white;
+}
+/* .about-me a{
+    text-decoration: none;
+}
+.myself{
+    position: relative; 
+    display: none; 
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    border: 2px inset #fff;
+    width: fit-content;
+    border-radius: 10px;
+}
+ .about-me:hover{ 
+    box-sizing: border-box;
+    box-shadow: 5px 8px 3px rgba(25, 33, 104, 0.6);
+ }
+.about-me:hover .myself{
+    display: block;
+    position: relative;
+    z-index: 2;
+    color: red;
+    background-color: blue;
+    font-weight: 900;  */
+.my-image{
+    width: 250px;
+    border-radius: 100%;
+    position: relative;
+    left: 1000px;
+    bottom: 440px;
+}
+.my-image:hover{
+    cursor: grab;
+    box-shadow: 3px 8px 8px rgba(12, 41, 14, 0.897);
+}
+.social-icons{
+    list-style-type: none;
+    font-size: 40px;
+}
+.icon-items{
+    display: inline-flex;
+    padding: 20px;
+    position: relative;
+    transition-property: transform, font-size;
+    transition-duration: 20s;
+}
+.icon-items :hover{
+    color: blue;
+    transform: rotate(-20deg);
+    font-size: 50px;
+}
+.skills-abilities{
+    position: absolute;
+    bottom:150px;
+    color: blueviolet;
+    transition-property: transform, color;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+}
+.skills-abilities:hover{
+    color: blue;
+    transform: skew(-20deg);
+    font-size: 30px;
+    font-weight: 900;
+}
+.my-skills{
+    display: inline-flex;
+    position: absolute;
+    bottom: 50px;
+    left: 400px;
+    width: 60px;
+}
+.HTML{
+    font-size: 40px;
+    text-align: center;
+    color: blue;
+}
+.CSS{
+    font-size: 40px;
+    text-align: center;
+    color: blue;
+}
+.JavaScript{
+    font-size: 40px;
+    text-align: center;
+    color: blue;
+}
+.HTML :hover{
+    color: blueviolet;
+    font-size: 60px;
+}
+.CSS  :hover{
+    font-size: 60px;
+    color: blueviolet;
+}
+.JavaScript  :hover{
+    font-size: 60px;
+    color: blueviolet;
+}
+
+
